@@ -84,13 +84,34 @@
 # print(x)
 # for i in range(1, 11):
 #     print(i, end = ' ')
-print("Exponent calculator")
-print("==========")
-a = int(input("Enter the base: "))
-n = int(input("Enter the exponent: "))
-result = a
-for i in range(n - 1):
-    result = result * a
+# print("Exponent calculator")
+# print("==========")
+# a = int(input("Enter the base: "))
+# n = int(input("Enter the exponent: "))
+# result = a
+# for i in range(n - 1):
+#     result = result * a
+#
+# print(f"Result: {result}")
+# print("Thank you for using our exponent calculator")
+# fish_count = int(input("How many fish do you want for dinner?\n"))
+# ryba = "<° )))-<"
+# x = 0
+# while x < fish_count:
+#     print(ryba)
+#     x += 1
+# fish_count = int(input("How many fish do you want for dinner?\n"))
+# for x in range(fish_count):
+#     print("<° )))-<")
+# input()
 
-print(f"Result: {result}")
-print("Thank you for using our exponent calculator")
+# count = int(10)
+# while (count <= 10 and count > 1):
+#     print(f"{count} green bottles hanging on the wall and one green bottle should accidentally fall")
+#     count -= 1
+# print(f"{count} green bottle hanging on the wall and one green bottle should accidentally fall")
+
+# print("Combination of rolls with two six-sided dice:")
+# for i in range(1,7):
+#     for j in range(1,7):
+#         print(f"({i},{j})", end=" ")
