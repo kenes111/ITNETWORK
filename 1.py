@@ -152,10 +152,10 @@ message = input("Enter your message: ")
 message = message.lower()
 print(f"The original message: {message}")
 coded_message = ""
-alphabet_chars = "abcdefghijklmnopqrstuvwxyz"
+alphabet_chars = "abcdefghijklmnopqrstuvwxyz "
 morse_chars = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
 "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
-"...-", ".--", "-..-", "-.--", "--.."]
+"...-", ".--", "-..-", "-.--", "--..", "/"]
 for char in message:
     morse_char = "?"
     try:
