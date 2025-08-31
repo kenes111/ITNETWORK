@@ -60,24 +60,40 @@
 # print(f"You entered a total of", len(zoznam),"words")
 
 
-numbers = []
-print("Enter the numbers, to stop entering numbers just hit ENTER")
-number = 1
-while number != "":
-    number = (input("Enter a number:"))
-    numbers.append(number)
-numbers.pop(-1)
-numbers_int = list(map(int, numbers))
-sorted = sorted(numbers_int)
-middle = int(len(sorted) / 2)
-median = (sorted[middle])
-x =len(numbers_int)
-while x > 0:
-    print(f"{numbers_int[len(numbers_int)-x]} deviates from the median by {numbers_int[len(numbers_int)-x]-median}")
-    x = x -1
+# numbers = []
+# print("Enter the numbers, to stop entering numbers just hit ENTER")
+# number = 1
+# while number != "":
+#     number = (input("Enter a number:"))
+#     numbers.append(number)
+# numbers.pop(-1)
+# numbers_int = list(map(int, numbers))
+# sorted = sorted(numbers_int)
+# middle = int(len(sorted) / 2)
+# median = (sorted[middle])
+# x =len(numbers_int)
+# while x > 0:
+#     print(f"{numbers_int[len(numbers_int)-x]} deviates from the median by {numbers_int[len(numbers_int)-x]-median}")
+#     x = x -1
 
 
 
+# Variable initialization
+original_message = "gaiusjuliuscaesar"
+print("Original message:", original_message)
+encrypted_message = ""
+shift = 1
+
+# loop iterating over characters
+for character in original_message:
+    i = ord(character)
+    i = i + shift
+    character = chr(i)
+    encrypted_message = encrypted_message + character
+
+# Printing
+print("Encrypted message:", encrypted_message)
+input()
 
 
 
