@@ -85,18 +85,38 @@ encrypted_message = ""
 shift = 1
 
 # loop iterating over characters
-for character in original_message:
-    i = ord(character)
-    i = i + shift
-    character = chr(i)
-    encrypted_message = encrypted_message + character
+# for character in original_message:
+#     i = ord(character)
+#     i = i + shift
+#     character = chr(i)
+#     encrypted_message = encrypted_message + character
+#
+# # Printing
+# print("Encrypted message:", encrypted_message)
+# input()
+#
+#
 
-# Printing
-print("Encrypted message:", encrypted_message)
-input()
+#!/usr/bin/env python3
+
+# print("Enter the text to be filled with smileys: ")
+text = "Today I overslept. And crashed my car! Oh and I swallowed a fly!! It must be all that bad karma catching up to me, right?"
+smile1 = ":)"
+smile2 = ":D"
+smile3 = ":P"
+smiles = [":)", ":D", ":P"]
+a = text.count("!")
+b = text.count("?")
+c = text.count(".")
+sum_specials = a + b + c
 
 
 
+
+
+
+
+# Complete the task here with your code...
 
 
 

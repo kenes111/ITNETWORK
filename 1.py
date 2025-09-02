@@ -148,20 +148,30 @@ from envs.notebook722.Lib.operator import index
 # print(0%5)
 
 
-message = input("Enter your message: ")
-message = message.lower()
-print(f"The original message: {message}")
-coded_message = ""
-alphabet_chars = "abcdefghijklmnopqrstuvwxyz "
-morse_chars = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
-"..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
-"...-", ".--", "-..-", "-.--", "--..", "/"]
-for char in message:
-    morse_char = "?"
-    try:
-        index = alphabet_chars.index(char)
-        morse_char = morse_chars[index]
-        coded_message = coded_message + " " + morse_char
-    except ValueError:
-        print("Not a valid character")
-print(f"Your coded message: {coded_message}")
+# message = input("Enter your message: ")
+# message = message.lower()
+# print(f"The original message: {message}")
+# coded_message = ""
+# alphabet_chars = "abcdefghijklmnopqrstuvwxyz "
+# morse_chars = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
+# "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
+# "...-", ".--", "-..-", "-.--", "--..", "/"]
+# for char in message:
+#     morse_char = "?"
+#     try:
+#         index = alphabet_chars.index(char)
+#         morse_char = morse_chars[index]
+#         coded_message = coded_message + " " + morse_char
+#     except ValueError:
+#         print("Not a valid character")
+# print(f"Your coded message: {coded_message}")
+
+# print(" ".join("Hello-World".split("-")))
+print("Grade average calculator")
+print("Enter the grades (separated by commas): ")
+user_input = input()
+zoznam = user_input.split(",")
+zoznam_int = [int(number) for number in zoznam ]
+avg = sum(zoznam_int) / len(zoznam_int)
+print(avg)
+
